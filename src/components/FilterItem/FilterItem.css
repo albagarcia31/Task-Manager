@@ -1,0 +1,8 @@
+.filter-item.active {
+  color: blue;
+  border-bottom: 2px solid blue;
+}
+
+.filter-item:hover {
+  cursor: pointer;
+}

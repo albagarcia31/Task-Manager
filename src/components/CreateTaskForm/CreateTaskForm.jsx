@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./CreateTaskForm.css";
 import Button from "../Button/Button";
 
@@ -51,14 +51,22 @@ const CreateTaskForm = (props) => {
 
     if (!taskData.name) {
       errors.nameError = "Task name is requered!";
+    } else if (taskData.name.length < 3) {
+      errors.nameError = "Task name must have min 3 characters";
     }
 
     if (!taskData.date) {
       errors.dateError = "Task date is requered!";
+    } else if (new Date(taskData.date) < new Date()) {
+      errors.dateError = "Task date should not be in the past";
     }
 
     if (!taskData.desc) {
       errors.descError = "Task description is requered!";
+    } else if (taskData.desc.length < 3) {
+      errors.descError = "Task description must have min 3 characters";
+    } else if (taskData.desc.length > 30) {
+      errors.descError = "Task description must have max 30 characters";
     }
 
     setFormErrors({ ...errors });
