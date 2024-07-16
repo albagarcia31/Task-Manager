@@ -34,10 +34,18 @@ const Badge = (props) => {
       value={props.status}
       onChange={handleChangeStatus}
     >
-      <option value="Todo">Todo</option>
-      <option value="In Progress">In Progress</option>
-      <option value="Pending">Pending</option>
-      <option value="Completed">Completed</option>
+      <option value="Todo" className="status grey">
+        Todo
+      </option>
+      <option value="In Progress" className="status blue">
+        In Progress
+      </option>
+      <option value="Pending" className="status yellow">
+        Pending
+      </option>
+      <option value="Completed" className="status green">
+        Completed
+      </option>
     </select>
   );
 };
