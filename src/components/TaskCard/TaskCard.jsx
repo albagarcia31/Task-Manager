@@ -9,8 +9,10 @@ const TaskCard = (props) => {
     <div className="taskContainer">
       <div className="top">
         <p className="type">{props.name}</p>
-        <Badge status={props.status} />
+        {/* {props.task.taskName} */}
+        <Badge status={props.status} id={props.id} />
       </div>
+
       <div className="content">{props.desc}</div>
       <div className="bottom">
         <p className="label">Due date</p>

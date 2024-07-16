@@ -5,6 +5,7 @@ export const TaskContext = createContext();
 export const TaskProvider = (props) => {
   const data = [
     {
+      id: "a9b1deb4d-3b7d",
       taskName: "task1",
       taskDate: "12-12-2024",
       taskDescription: "desc1",
@@ -12,6 +13,7 @@ export const TaskProvider = (props) => {
     },
 
     {
+      id: "b9b1deb4d-3b7d",
       taskName: "task2",
       taskDate: "12-12-2024",
       taskDescription: "desc2",
@@ -19,6 +21,7 @@ export const TaskProvider = (props) => {
     },
 
     {
+      id: "c9b1deb4d-3b7d",
       taskName: "task3",
       taskDate: "12-12-2024",
       taskDescription: "desc3",
@@ -26,6 +29,7 @@ export const TaskProvider = (props) => {
     },
 
     {
+      id: "d9b1deb4d-3b7d",
       taskName: "task4",
       taskDate: "12-12-2024",
       taskDescription: "desc4",
