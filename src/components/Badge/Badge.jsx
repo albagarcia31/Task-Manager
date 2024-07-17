@@ -3,7 +3,7 @@ import "./Badge.css";
 import { useTaskContext } from "../../context/TaskContext";
 
 const Badge = (props) => {
-  const { taskList, setTaskList } = useTaskContext;
+  const { taskList, setTaskList } = useTaskContext();
   const badgeColor = () => {
     switch (props.status) {
       case "Todo":
